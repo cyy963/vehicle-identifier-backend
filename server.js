@@ -84,7 +84,7 @@ app.post('/upload', upload.single('image'), async (req, res) => {
     console.log("Tags received from Azure:", tags);
 
     // Define a list of car types to match against the tags
-    const carTypes = ['sedan', 'suv', 'coupe', 'convertible', 'hatchback', 'minivan', 'pickup truck', 'truck', 'station wagon', 'sports car', 'van', 'luxury car'];
+    const carTypes = ['sedan', 'suv', 'coupa', 'convertible', 'hatchback', 'minivan', 'pickup truck', 'truck', 'station wagon', 'sports car', 'van', 'luxury car'];
 
     // Find the first tag that matches a car type
     const carType = tags.find(tag => carTypes.includes(tag.name));
